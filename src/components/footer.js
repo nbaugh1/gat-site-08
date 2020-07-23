@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar'
 const Footer = () => {
     return (
         <footer>
-            <Navbar sticky="bottom">
+            <Navbar fixed="bottom">
                 <p>test</p>
             </Navbar>
         </footer>
