@@ -22,3 +22,7 @@ body {
 .navbar-dark .navbar-brand {
   color: var(--mainColor);
 }
+
+.jumbotron {
+  /* border: solid red; */
+}

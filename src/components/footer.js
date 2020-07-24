@@ -5,7 +5,7 @@ const Footer = () => {
     return (
         <footer>
             <Navbar fixed="bottom">
-                <p>test</p>
+                Nick Baughman © 2020, Built with Gatsby.js
             </Navbar>
         </footer>
     )

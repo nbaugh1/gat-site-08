@@ -9,7 +9,7 @@ const Header = ({ siteTitle }) => (
   <header className="bg-dark">
     {/* <Container> */}
     <Navbar expand="sm" variant="dark" bg="dark">
-      <Navbar.Brand>{siteTitle}</Navbar.Brand>
+      {/* <Navbar.Brand>{siteTitle}</Navbar.Brand> */}
       <Navbar.Toggle aria-controls="navbarResponsive" />
       <Navbar.Collapse id="navbarResponsive">
         <Nav as="ul" className="ml-auto">

@@ -1,35 +1,60 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Jumbotron from 'react-bootstrap/Jumbotron'
-import Image from '../components/image'
-import { useTrail, animated } from 'react-spring'
+import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Row'
+import Button from 'react-bootstrap/Button'
+import Image from './image'
+import { useSpring, animated, config } from 'react-spring'
 
-
-const words = ['Nick Baughman', 'Software Engineer', 'Ruby', 'JavaScript']
-const config = { mass: 100, tension: 5000, friction: 2000 }
 
 const Hero = () => {
-    const [toggle, setToggle] = useState(true)
-    const trail = useTrail(words.length, {
-        config,
-        opacity: toggle ? 1 : 0,
-        x: toggle ? 0 : 20,
-        height: toggle ? 80 : 0,
-        from: { opacity: 0, x: 20, height: 0 }
+    const firstFade = useSpring({
+        config: config.slow,
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+    })
+    const secondFade = useSpring({
+        config: config.slow,
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        delay: 1000
+    })
+    const thirdFade = useSpring({
+        config: config.slow,
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        delay: 2000
+    })
+    const fourthFade = useSpring({
+        config: config.slow,
+        from: { opacity: 0 },
+        to: { opacity: 1 },
+        delay: 3000
     })
     return (
         <Jumbotron fluid className="bg-dark">
-            <div className="trails-main" onClick={() => setToggle(state => !state)}>
-                <div>
-                    {trail.map(({ x, height, ...rest }, index) => (
-                        <animated.div
-                            key={words[index]}
-                            className="trails-text"
-                            style={{ ...rest, transform: x.interpolate(x => `translate3d(0,${x}px,0)`) }}>
-                            <animated.div style={{ height }}>{words[index]}</animated.div>
-                        </animated.div>
-                    ))}
-                </div>
-            </div>
+            <Row>
+                <Col>
+                    <animated.h1 style={firstFade}>Nick Baughman</animated.h1>
+                    <animated.h5 style={secondFade}>Software Engineer</animated.h5>
+                    <animated.p style={thirdFade}>JavaScript - React - Ruby - Rails</animated.p>
+                </Col>
+                <Col>
+                    <Image />
+                </Col>
+            </Row>
+            <Row style={{ justifyContent: "center" }}>
+                <animated.div style={fourthFade} >
+                    <Col  >
+                        <Button variant="outline-secondary" style={{ margin: 8 }}>
+                            Resume
+                        </Button>
+                        <Button variant="outline-secondary" style={{ margin: 8 }}>
+                            Contact
+                        </Button>
+                    </Col>
+                </animated.div>
+            </Row>
         </Jumbotron>
     )
 }
