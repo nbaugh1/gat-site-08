@@ -13,12 +13,15 @@
     "gatsby-plugin-react-helmet": "^3.3.6",
     "gatsby-plugin-sharp": "^2.6.14",
     "gatsby-source-filesystem": "^2.3.14",
+    "gatsby-theme-jsonresume": "^1.0.6",
+    "gatsby-transformer-pdf": "^1.3.11",
     "gatsby-transformer-sharp": "^2.5.7",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-bootstrap": "^1.2.2",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
+    "react-pdf": "^4.1.0",
     "react-spring": "^8.0.27"
   },
   "devDependencies": {
