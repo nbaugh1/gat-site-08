@@ -46,7 +46,7 @@ const Hero = () => {
             <Row style={{ justifyContent: "center" }}>
                 <animated.div style={fourthFade} >
                     <Col  >
-                        <Button variant="outline-secondary" style={{ margin: 8 }}>
+                        <Button variant="outline-secondary" style={{ margin: 8 }} href="/resume.html">
                             Resume
                         </Button>
                         <Button variant="outline-secondary" style={{ margin: 8 }}>

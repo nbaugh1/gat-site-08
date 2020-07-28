@@ -16,6 +16,7 @@ module.exports = {
     {
       resolve: `gatsby-theme-jsonresume`,
       options: {
+        theme: 'elegant',
         resumeJson: {
           "basics": {
             "name": "Nick Baughman",
