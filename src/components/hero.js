@@ -32,7 +32,7 @@ const Hero = () => {
         delay: 3000
     })
     return (
-        <Jumbotron fluid className="bg-dark">
+        <Jumbotron fluid className="bg-dark" style={{ marginTop: 100 }}>
             <Row>
                 <Col>
                     <animated.h1 style={firstFade}>Nick Baughman</animated.h1>

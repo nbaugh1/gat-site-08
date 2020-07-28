@@ -26,3 +26,8 @@ body {
 .jumbotron {
   /* border: solid red; */
 }
+
+.card {
+  background-color: black;
+  color: white;
+}

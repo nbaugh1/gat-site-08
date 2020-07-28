@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container"
 const Header = ({ siteTitle }) => (
   <header className="bg-dark">
     {/* <Container> */}
-    <Navbar expand="sm" variant="dark" bg="dark">
+    <Navbar expand="sm" variant="dark" bg="dark" fixed="top">
       {/* <Navbar.Brand>{siteTitle}</Navbar.Brand> */}
       <Navbar.Toggle aria-controls="navbarResponsive" />
       <Navbar.Collapse id="navbarResponsive">
