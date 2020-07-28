@@ -19,7 +19,7 @@ const Header = ({ siteTitle }) => (
             </Link>
           </Nav.Item>
           <Nav.Item as="li">
-            <Link to="/resume" className="nav-link" activeClassName="active">
+            <Link to="/resume.html" className="nav-link" activeClassName="active">
               Resume
             </Link>
           </Nav.Item>
