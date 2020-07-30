@@ -25,7 +25,6 @@ const Footer = () => {
                         <a href={linkedInUrl}><AiFillLinkedin /></a>
                     </div>
                     <div style={{ margin: 4 }}>
-
                         <a
                             target="_blank"
                             rel="noopener noreferrer"
