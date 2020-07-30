@@ -5,6 +5,9 @@ body {
   background-color: var(--backgroundColor);
   color: var(--mainColor);
 }
+a {
+  color: var(--mainColor);
+}
 
 .bg-dark {
   background-color: var(--backgroundColor) !important;
@@ -30,4 +33,12 @@ body {
 .card {
   background-color: black;
   color: white;
+}
+
+.footer-right {
+  float: right;
+}
+
+.footer-left {
+  float: left;
 }
